@@ -1,0 +1,32 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Main Menu</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header">
+            <ion-list id="menu-null">
+                <ion-item id="menu-list-item1" ui-sref="menu.home" menu-close="">Home</ion-item>
+               <!-- <ion-item id="menu-list-item1" ui-sref="menu.issuesInYourArea" menu-close="">Issues In Your Area</ion-item>
+                <ion-item id="menu-list-item2" ui-sref="menu.issuesAroundTheWorld" menu-close="">Issues Around The World</ion-item>
+                <ion-item id="menu-list-item3" ui-sref="menu.reportIssue" menu-close="">Report Issue</ion-item>-->
+                
+                <ion-item id="menu-list-item9" ng-click="quickticket()" ui-sref="menu.home" menu-close="">Quick Booking</ion-item>
+                <ion-item id="menu-list-item9" ui-sref="menu.normalbooking" menu-close="">Normal Booking</ion-item>
+                <ion-item id="menu-list-item9" ui-sref="menu.stationbooking" menu-close="">Station Ticket</ion-item>
+                
+                <ion-item id="menu-list-item5" ui-sref="menu.wallet" menu-close="">Wallet</ion-item>
+                <ion-item id="menu-list-item4" ui-sref="menu.settings"  menu-close="">Settings</ion-item>
+                <ion-item id="menu-list-item6" ng-click="logout()" menu-close="">Log Out</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

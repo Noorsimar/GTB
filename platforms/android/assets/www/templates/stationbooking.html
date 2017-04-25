@@ -1,0 +1,249 @@
+<ion-view title="Station Ticket" id="page3">
+   <ion-content padding="true" style="background: url('img/bgi.png') no-repeat center;background-size:cover;" >
+   	
+        <label class="item item-input item-floating-label" style="height:74px !important;" >
+            <span>Ticket Type</span></br>
+            <input type="text" type="text" style="padding-top:6px;margin-top:6px;width:100%; background:none;border-top:0px;border-left:0px;border-right:0px;border-bottom:0px;color:black;" value="Station Ticket" disabled />
+        </label>
+
+
+
+        <label class="item item-input item-floating-label" style="height:74px !important;" >
+            <span>City</span></br>
+            <select type="text" id="city_station" ng-change="cityselected()" ng-model="mycity" style="padding-top:6px;margin-top:6px;width:100%; background:none;border-top:0px;border-left:0px;border-right:0px;border-bottom:0px;color:black;" value="Select City">
+            <option>MUMBAI</option>
+            <option>CHENNAI</option>
+            <option>NEW DELHI</option>
+            </select>
+        </label>
+
+
+
+
+
+        <label class="item item-input item-floating-label" style="height:74px !important;" >
+            <span>From (Source)</span></br>
+            <select type="text" id="source_station" ng-if="mumbai" style="padding-top:6px;margin-top:6px;width:100%; background:none;border-top:0px;border-left:0px;border-right:0px;border-bottom:0px;color:black;">
+
+<option>AIRAVALI (AIRL)</option>
+<option>AMBERNATH (ABH)</option>
+<option>AMBIVLI (ABY)</option>
+<option>ANDHERI (ADH)</option>
+<option>ASANGAON (ASO)</option>
+<option>ATGAON (ATG)</option>
+<option>BADLAPUR (BUD)</option>
+<option>BANDRAJN. (BA)</option>
+<option>BELAPUR (BEPR)</option>
+<option>BHANDUP (BND)</option>
+<option>BHAYANDAR (BYR)</option>
+<option>BHIVANDIROAD (BIRD)</option>
+<option>BHIVPURIROAD (BVS)</option>
+<option>BOISAR (BOR)</option>
+<option>BORIVALI (BVI)</option>
+<option>BYCULLA (BY)</option>
+<option>CHARNIROAD (CYR)</option>
+<option>CHATRAPATISHIVAJIT (CSTM)</option>
+<option>CHEMBUR (CMBR)</option>
+<option>CHINCHPOKLI (CHG)</option>
+<option>CHUNABHATTI (CHF)</option>
+<option>CHURCHGATE (CCG)</option>
+<option>COTTONGREEN (CTGN)</option>
+<option>CURREYROAD (CRD)</option>
+<option>DADARCENTRAL (DR)</option>
+<option>DADARWESTERN (DDR)</option>
+<option>DAHANUROAD (DRD)</option>
+<option>DAHISAR (DIC)</option>
+<option>DIVAJN. (DIVA)</option>
+<option>DOCKYARDROAD (DKRD)</option>
+<option>DOMBIVLI (DI)</option>
+<option>ELPHINSTONEROAD (EPR)</option>
+<option>GHANSOLI (GNSL)</option>
+<option>GHATKOPAR (GC)</option>
+<option>GOREGAON (GMN)</option>
+<option>GOVANDI (GV)</option>
+<option>GRANTROAD (GTR)</option>
+<option>GURU TEGHBAHADURNAGA (GTBN)</option>
+<option>JOGESHWARI (JOS)</option>
+<option>JUINAGAR (JNJ)</option>
+<option>KALVA (KLVA)</option>
+<option>KALYANJN. (KYN)</option>
+<option>KANDIVLI (KILE)</option>
+<option>KANJURMARG (KJMG)</option>
+<option>KARJAT (KJT)</option>
+<option>KASARA (KSRA)</option>
+<option>KELVEROAD (KLV)</option>
+<option>KHADAVLI (KDV)</option>
+<option>KHANDESHWAR (KNDS)</option>
+<option>KHARDI (KE)</option>
+<option>KHARGHAR (KHAG)</option>
+<option>KHARROAD (KHAR)</option>
+<option>KHOPOLI (KHPI)</option>
+<option>KING'SCIRCLE (KCE)</option>
+<option>KOPAR (KOPR)</option>
+<option>KOPARKHAIRNA (KPHN)</option>
+<option>KURLAJN. (CLA)</option>
+<option>LOWERPAREL (PL)</option>
+<option>MAHALAKSHMI (MX)</option>
+<option>MAHIMJN. (MM)</option>
+<option>MALAD (MDD)</option>
+<option>MANKHURD (MNKD)</option>
+<option>MANSAROVAR (MANR)</option>
+<option>MARINELINES (MEL)</option>
+<option>MASJID (MSD)</option>
+<option>MATUNGA (MTN)</option>
+<option>MATUNGAROAD (MRU)</option>
+<option>MIRAROAD (MIRA)</option>
+<option>MULUND (MLND)</option>
+<option>MUMBAICENTRALL (BCL) </option>
+<option>MUMBRA (MBQ)</option>
+<option>NAHUR (NHU)</option>
+<option>NAIGAON (NIG)</option>
+<option>NALLASOPARA (NSP)</option>
+<option>NERAL (NRL)</option>
+<option>NERUL (NEU)</option>
+<option>PALGHAR (PLG)</option>
+<option>PANVEL (PNVL)</option>
+<option>PAREL (PR)</option>
+<option>RABALE (RABE)</option>
+<option>REAYROAD (RRD)</option>
+<option>SANDHURSTROAD (SNRD)</option>
+<option>SANPADA (SNCR)</option>
+<option>SANTACRUZ (STC)</option>
+<option>SAPHALE (SAH)</option>
+<option>SEAWOODDARAVE (SWDV)</option>
+<option>SEWRI (SVE)</option>
+<option>SHAHAD (SHAD)</option>
+<option>SHELU (SHLU)</option>
+<option>SION (SIN)</option>
+<option>THAKURLI (THK)</option>
+<option>THANE (TNA)</option>
+<option>TILAKNAGAR (TKNG)</option>
+<option>TITAVALA (TLA)</option>
+<option>TURBHE (TUH)</option>
+<option>ULHASNAGAR (ULNR)</option>
+<option>VADALAROAD (VDLR)</option>
+<option>VAITARNA (VTN)</option>
+<option>VANGANI (VGI)</option>
+<option>VANGAON (VGN)</option>
+<option>VASAIROAD (BSR)</option>
+<option>VASHI (VSH)</option>
+<option>VASIND (VSD)</option>
+<option>VIDYAVIHAR (VVH)</option>
+<option>VIKROLI (VK)</option>
+<option>VILEPARLE (VLP)</option>
+<option>VIRAR (VR)</option>
+<option>VITHALWADI (VLDI)</option>
+</select>
+
+<select type="text" id="source_station" ng-if="chennai" style="padding-top:6px;margin-top:6px;width:100%; background:none;border-top:0px;border-left:0px;border-right:0px;border-bottom:0px;color:black;">
+<option>AMBATTUR (ABU)</option>
+<option>ANUPPAMBATTU (APB)</option>
+<option>ATTIPPATTU (AIP)</option>
+<option>AVADI (AVD)</option>
+<option>BASIN BRIDGE JN. (BBQ)</option>
+<option>CHENGALPATTU JN. (CGL)</option>
+<option>CHENNAI BEACH JN. (MSB)</option>
+<option>CHENNAI CENTRAL (MAS)</option>
+<option>CHENNAI CHETPAT (MSC)</option>
+<option>CHENNAI EGMORE (MS)</option>
+<option>CHENNAI FORT (MSF)</option>
+<option>CHENNAI PARK (MPK)</option>
+<option>CHENNAI PARK TOWN (MPKT)</option>
+<option>CHEPAUK (MCPK)</option>
+<option>CHINTADARIPET (MCPT)</option>
+<option>CHROMEPET (CMP)</option>
+<option>ENNORE (ENR)</option>
+<option>GREENWAYS ROAD (GWYR)</option>
+<option>GUDUVANCHERI (GI)</option>
+<option>GUINDY (GDY)</option>
+<option>GUMMIDIPUNDI (GPD)</option>
+<option>INDRA NAGAR (INDR)</option>
+<option>KASTURBA NAGAR (KTBR)</option>
+<option>KATHIVAKKAM (KAVM)</option>
+<option>KATTANGULATUR (CTM)</option>
+<option>KAVARAIPPETTAI (KVP)</option>
+<option>KODAMBAKKAM (MKK)</option>
+<option>KORATTUR (KOTR)</option>
+<option>KORUKKUPET JN (KOK)</option>
+<option>KOTTURPURAM (KTPM)</option>
+<option>LIGHT HOUSE (MLHS)</option>
+<option>MAMBALAM (MBM)</option>
+<option>MANDAVELI (MNDY)</option>
+<option>MINAMBAKKAM (MN)</option>
+<option>MINJUR (MJR)</option>
+<option>MUNDAKAKANNI AMMAN K (MKAK)</option>
+<option>NUNGAMBAKKAM (NBK)</option>
+<option>PALAVANTANGAL (PZA)</option>
+<option>PALLAVARAM (PV)</option>
+<option>PATTABIRAM (PAB)</option>
+<option>PATTABIRAM E DEPOT (PRES)</option>
+<option>PATTABIRAM M SIDING (PTMS)</option>
+<option>PATTARAVAKKAM (PVM)</option>
+<option>PERAMBUR (PER)</option>
+<option>PERAMBUR CARRIAGE WO (PCW)</option>
+<option>PERAMBUR LOCO WORKS (PEW)</option>
+<option>PERUNGALALATTUR (PRGL)</option>
+<option>PERUNGUDI (PRGD)</option>
+<option>PONNERI (PON)</option>
+<option>SAIDAPET (SP)</option>
+<option>SEVVAPET ROAD (SVR)</option>
+<option>SINGAPERUMALKOIL (SKL)</option>
+<option>ST. THOMAS MOUNT (STM)</option>
+<option>TAMBARAM (TBM)</option>
+<option>TAMBARAM SANATORIUM (TBMS)</option>
+<option>TARAMANI (TRMN)</option>
+<option>THIRUMAYILAI (MTMY)</option>
+<option>TIRUNINRAVUR (TI)</option>
+<option>TIRUSULAM (TLM)</option>
+<option>TIRUVALLIKENI (MTCN)</option>
+<option>TIRUVALLUR (TRL)</option>
+<option>TIRUVANMIYUR (TYMR)</option>
+<option>TIRUVOTTIYUR (TVT)</option>
+<option>TONDIARPET (TNP)</option>
+<option>VANDALUR (VDR)</option>
+<option>VELACHERY (VLCY)</option>
+<option>VEPPAMPATTU (VEU)</option>
+<option>VILLIVAKKAM (VLK)</option>
+<option>VYASARPADI JEEVA (VJM)</option>
+<option>WASHERMANPET (WST)</option>
+<option>WIMCO NAGAR (WCN)</option>
+</select>
+<select type="text" id="source_station" ng-if="newdelhi" style="padding-top:6px;margin-top:6px;width:100%; background:none;border-top:0px;border-left:0px;border-right:0px;border-bottom:0px;color:black;">
+<option>ASAOIT (AST)</option>
+<option>BALLABHGARH (BVH)</option>
+<option>FARIDABAD (FDB)</option>
+<option>FARIDABAD NEW TOWN (FDN)</option>
+<option>HAZART NIZAMUDDIN (NZM)</option>
+<option>NEW DELHI (NDLS)</option>
+<option>OKHLA (OKA)</option>
+<option>PALWAL (PWL)</option>
+<option>SHIVAJI BRIDGE (CSB)</option>
+<option>TILAK BRIDGE ( TKJ)</option>
+<option>TUGLAKABAD (TKD)</option>
+
+
+            </select>
+        </label>
+
+
+
+ <!--       <label class="item item-input item-floating-label" style="height:74px !important;" >
+            <span>Date</span></br>
+            <input type="date" id="date" style="padding-top:6px;margin-top:6px;width:100%; background:none;border-top:0px;border-left:0px;border-right:0px;border-bottom:0px;color:black;" />
+            
+        </label>
+-->
+        <div class="spacer" style="width: 300px; height: 30px;"></div>
+       
+
+<a ng-click="createticket();" id="changePassword-button6" class="button button-positive button-outline button-block">Create Ticket</a>
+
+
+
+
+
+
+
+
+    </ion-content>
+</ion-view>

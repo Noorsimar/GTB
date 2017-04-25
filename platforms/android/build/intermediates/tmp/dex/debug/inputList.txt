@@ -1,0 +1,2 @@
+C:\Users\dellxps\Downloads\gtb\platforms\android\build\intermediates\classes\debug
+C:\Users\dellxps\Downloads\gtb\platforms\android\build\intermediates\pre-dexed\debug\classes-161c72d1c8d5d5e34ab221b048f8fdefc2b73faf.jar
